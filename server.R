@@ -227,7 +227,7 @@ shinyServer(function(input, output) {
   
   output$P <- renderUI({
     if (input$model != "arma") {return()}else{
-      sliderInput("p", "ParamÃÂ¨tres de ARMA(p,q),  p:", min=0,max=6,value=3,step=1)
+      sliderInput("p", "Paramètres de ARMA(p,q),  p:", min=0,max=6,value=3,step=1)
     }
   })
   output$Q <- renderUI({
@@ -237,7 +237,7 @@ shinyServer(function(input, output) {
   })
   output$T <- renderUI({
     if (input$model != "var") {return()}else{
-      sliderInput("t", "ParamÃÂ¨tre de var(n), n:", min=1,max=20,value=3,step=1)
+      sliderInput("t", "Paramètre de var(n), n:", min=1,max=20,value=3,step=1)
     }
   })
   output$Per <- renderUI({
