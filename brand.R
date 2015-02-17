@@ -1,5 +1,5 @@
 library(vars)
-x<-read.csv2("Classeur1.csv",sep="")
+x<-read.csv2("Classeur1.csv",sep="\t")
 attach(x)
 
 
@@ -116,7 +116,7 @@ total=data.frame(Day,total)
 
 
 library(vars)
-y<-read.csv2("Classeur2.csv",sep="")
+y<-read.csv2("Classeur2.csv",sep="\t")
 attach(y)
 
 
