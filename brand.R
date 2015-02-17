@@ -1,4 +1,5 @@
 library(vars)
+
 x<-read.csv2("Classeur1.csv",sep="\t")
 attach(x)
 
