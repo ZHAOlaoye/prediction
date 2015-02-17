@@ -79,10 +79,10 @@ shinyUI(pageWithSidebar(
                conditionalPanel("input.model=='arma'", plotOutput("sum4"))),
       
       
-      tabPanel("PrÃ©diction",conditionalPanel("input.model=='var'",dataTableOutput("view")),
+      tabPanel("Prédiction",conditionalPanel("input.model=='var'",dataTableOutput("view")),
                conditionalPanel("input.model=='arma'",dataTableOutput("view1"))),
       
-      tabPanel("RÃ©sumÃ© de prÃ©diction",conditionalPanel("input.model=='var'",verbatimTextOutput("summary")),
+      tabPanel("Résumé de prédiction",conditionalPanel("input.model=='var'",verbatimTextOutput("summary")),
                conditionalPanel("input.model=='arma'",verbatimTextOutput("summary1"))),
       
       tabPanel("Graphique",conditionalPanel("input.model=='var'",plotOutput("plot")),
