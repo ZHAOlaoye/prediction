@@ -9,7 +9,7 @@ source("campagne.R")
 
 
 shinyUI(pageWithSidebar(
-  headerPanel(span("NetBooster PrÃ©diction",style="color:pink")),
+  headerPanel(span("NetBooster Prédiction",style="color:pink")),
   
   sidebarPanel(
 
@@ -20,19 +20,19 @@ shinyUI(pageWithSidebar(
     
     
     br(),
-    selectInput("model", "Choissez un modÃ¨le", choices=list("var","arma"), selected = "var")
+    selectInput("model", "Choissez un modèle", choices=list("var","arma"), selected = "var")
     ,
     uiOutput("P"),
     uiOutput("Q"),
     uiOutput("T"),
     
-    radioButtons("dataset", "Choisissez une donnÃ©e:", 
+    radioButtons("dataset", "Choisissez une donnée:", 
                  choices = c("Clics","Impressions","CTR","CPC.moy.","Taux.de.conversion.des.clics","Valeur.de.conv..totale")),
     
     
     
     br(),
-    sliderInput("obs", "Nombre d'observations Ã  voir:", min=1,max=280,value=100,step=1),
+    sliderInput("obs", "Nombre d'observations à voir:", min=1,max=280,value=100,step=1),
     
     
     
@@ -100,7 +100,7 @@ shinyUI(pageWithSidebar(
       
       
       
-      tabPanel("DonnÃ©e",dataTableOutput("look")),
+      tabPanel("Donnée",dataTableOutput("look")),
       tabPanel("Campagne",plotOutput("cc"),plotOutput("cc1"),plotOutput("cc2"),plotOutput("cc3")),
       tabPanel("Mois",plotOutput("mois"))
       
