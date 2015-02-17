@@ -12,10 +12,7 @@ shinyUI(pageWithSidebar(
   headerPanel(span("NetBooster PrÃ©diction",style="color:pink")),
   
   sidebarPanel(
-    img(src = "pb.png", height = 150, width = 300),
-    br(),
-    br(),
-    
+
     dateRangeInput("dates", label = h5("Date"),start="2012-09-02",end="2014-09-22",min="2012-09-01",max="2014-09-23")
     ,
     
