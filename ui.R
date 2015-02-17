@@ -12,7 +12,7 @@ shinyUI(pageWithSidebar(
   headerPanel(span("NetBooster PrÃ©diction",style="color:pink")),
   
   sidebarPanel(
-    img(src = "pb.png", height = 100, width = 200),
+    img(src = "pb.png", height = 150, width = 300),
     br(),
     br(),
     
